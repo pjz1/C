@@ -1,5 +1,4 @@
 #include "mpc.h"
-#include "mpc.c"
 #include <math.h>
 
 #ifdef _WIN32
@@ -19,7 +18,7 @@ void add_history(char* unused) {}
 
 #else
 #include <editline/readline.h>
-//#include <editline/history.h>
+#include <editline/history.h>
 #endif
 
 /* Add SYM and SEXPR as possible lval types */
